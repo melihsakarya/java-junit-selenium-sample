@@ -25,6 +25,7 @@ public class N11SampleTest extends BaseTest{
     @Test
     public void girisYap(){
         clickByLintext("Giriş Yap");
+
         sendById("email", "melih.sakarya@gmail.com");
         sendById("password", "123456");
         clickById("loginButton");
