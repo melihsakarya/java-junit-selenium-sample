@@ -14,6 +14,18 @@ public class SampleGittigidiyorTest5 extends BaseTest {
         clickByDataCy("search-find-button");
     }
 
+    @Test
+    public void gittigidiyorLoginTest(){
+        //clickByDataCy("header-user-menu");
+        driver.findElement(By.xpath("//*[@title = 'Giriş Yap']")).click();
+        driver.get("https://www.gittigidiyor.com/uye-girisi");
+
+
+        sendById("L-UserNameField", "melih.sakarya@gmail.com");
+        sendById("L-PasswordField", "123456");
+        clickById("gg-login-enter");
+
+    }
 
 
 

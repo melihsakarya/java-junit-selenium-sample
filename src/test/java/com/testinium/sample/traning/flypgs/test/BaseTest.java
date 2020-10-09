@@ -1,4 +1,4 @@
-package com.testinium.sample.traning.gg.test;
+package com.testinium.sample.traning.flypgs.test;
 
 import org.junit.After;
 import org.junit.Before;
@@ -14,7 +14,7 @@ public class BaseTest {
     public void startTest(){
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
         driver = new ChromeDriver();
-        driver.get("https://www.gittigidiyor.com");
+        driver.get("https://www.flypgs.com/");
     }
 
     @After
@@ -40,7 +40,4 @@ public class BaseTest {
         driver.findElement(By.id(id)).click();
     }
 
-    public void callPage(String url) {
-        driver.get(url);
-    }
 }
